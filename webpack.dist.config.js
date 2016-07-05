@@ -54,7 +54,7 @@ module.exports = {
       loader: 'babel-loader'
     }, {
       test: /\.css$/,
-      loader: 'style-loader!scss-loader!autoprefixer-loader?{browsers: ["last 2 version"]}'
+      loader: 'style-loader!css-loader!autoprefixer-loader?{browsers: ["last 2 version"]}'
     }, {
       test: /\.sass/,
       loader: 'style-loader!css-loader!autoprefixer-loader?{browsers: ["last 2 version"]}!sass-loader?outputStyle=expanded'
@@ -62,7 +62,7 @@ module.exports = {
       test: /\.json$/,
       loader: 'json-loader'
     }, {
-      test: /\.(png|jpg|woff|woff2)$/,
+      test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
       loader: 'url-loader?limit=8192'
     }]
   }
